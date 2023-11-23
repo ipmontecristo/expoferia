@@ -22,16 +22,9 @@ body {
   padding: 0;
 }
 
-footer {
-  position: absolute;
-    left: 0;
-    right: 0;
-    width: 100%;
-}
-
 .embed-container {
     position: relative;
-    padding-bottom: 70%;
+    padding-bottom: 80%;
     height: 0;
     overflow: hidden;
 }
@@ -41,14 +34,19 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    
+   
 }
 
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 4.5rem;            /* altura de pie de página */
+}
 </style>
 
 </head>
 <body>
-  
 
     <nav class="navbar navbar-expand-sm navbar-light bg-info">
         <div class="container-fluid">
@@ -75,13 +73,13 @@ footer {
                   Cursos
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">1° Año "A"</a></li>
-                  <li><a class="dropdown-item" href="#">1° Año "B"</a></li>
+                  <li><a class="dropdown-item" href="1roA.html" target="myFrame">1° Año "A"</a></li>
+                  <li><a class="dropdown-item" href="1roB.html" target="myFrame">1° Año "B"</a></li>
                   <li><a class="dropdown-item" href="2doA.html" target="myFrame">2° Año "A"</a></li>
                   <li><a class="dropdown-item" href="2doB.html" target="myFrame">2° Año "B"</a></li>
                   <li><a class="dropdown-item" href="3roA.html" target="myFrame">3° Año "A"</a></li>
                   <li><a class="dropdown-item" href="3roB.html" target="myFrame">3° Año "B"</a></li>
-                  <li><a class="dropdown-item" href="#">4° Año "A"</a></li>
+                  <li><a class="dropdown-item" href="4toA.html" target="myFrame">4° Año "A"</a></li>
                   <li><a class="dropdown-item" href="4toB.html" target="myFrame">4° Año "B"</a></li>
                 </ul>
               </li>
@@ -100,7 +98,7 @@ footer {
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="imagenes/c1.bmp" class="d-block w-100" alt="...">
+            <img src="imagenes/c1.png" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5></h5>
               <p></p>
@@ -136,7 +134,7 @@ footer {
         <iframe name="myFrame" src="home.html" frameborder="0" allowfullscreen> </iframe>    
       </div>
 
-     
+      
 </body>
 
 <footer id="footer" class="bg-info" >
@@ -146,6 +144,6 @@ footer {
     <a style="text-decoration: none" class="text-reset fw-bold" href="">Ramos, Juan Carlos</a>
   </div>
   
-</footer> 
+</footer>
 
 </html>
