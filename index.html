@@ -12,7 +12,10 @@
 
 <style>
 html{margin:0; padding:0;height: 100%;}
-   body {margin:0; padding:0;height: 100%}
+   body {margin:0; padding:0;height: 100%;min-height: 100vh;
+  
+  display: flex;
+  flex-direction: column;}
         form, iframe { margin:0; padding:0; height:100%; width:100%; display:block;border:none; background-color: aqua; }
     
 
@@ -117,7 +120,7 @@ html{margin:0; padding:0;height: 100%;}
         <iframe id="pdf" name="myFrame" src="home.html" runat="server" frameborder="0"></iframe>
     </form>
 
-<footer class="footer"> 
+<footer class="footer bg-info"> 
        <div class="text-center p-4" >
     © 2023 Copyright:
     <a style="text-decoration: none" class="text-reset fw-bold" href="">Ramos, Juan Carlos</a>
