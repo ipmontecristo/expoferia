@@ -34,6 +34,14 @@
   outline: 2px solid #6f42c1;
   outline-offset: 3px;
 }
+
+				      dialog {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 300px;
+}
                                 </style>
                                 <script type='text/javascript' src=''></script>
                                 <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
@@ -115,8 +123,30 @@
                                             <p class="card-text">El sabor genuino en cada bocado, tradición bien logrado.</p>
 
                                         </div>
-<a href="#" target="_blank"> 
-									  <button><i class="bi bi-instagram" style="color: white;"></i> + Info</button></a> 
+<!-- Inicio Button modal -->
+    <a><button id="abrirModal"><i class="bi bi-instagram" style="color: white;"></i> + Info</button></a>
+
+    <dialog id="miModal">
+        <h2>¡Lo lamentamos!</h2>
+        <p>No tenemos información para mostrarte.</p>
+        <button id="cerrarModal">Cerrar</button>
+    </dialog>
+
+    <script>
+        const abrirModal = document.getElementById('abrirModal');
+        const miModal = document.getElementById('miModal');
+        const cerrarModal = document.getElementById('cerrarModal');
+
+        abrirModal.addEventListener('click',   
+ () => {
+            miModal.showModal();
+        });
+
+        cerrarModal.addEventListener('click', () => {
+            miModal.close();
+        });
+    </script>
+								<!-- Fin Button modal -->
                                     </div>
                                 </div>
                                 <div class="col-md-4 mb-3">
